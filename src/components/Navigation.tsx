@@ -77,7 +77,7 @@ const Navigation = () => {
               <Instagram size={20} />
             </a>
             <a
-              href="https://github.com/vedasri2511/tecstasy2k26"
+              href="https://github.com/vedasri2511/tecstasy2026.git"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-foreground/70 hover:text-glow-cyan transition-colors"
