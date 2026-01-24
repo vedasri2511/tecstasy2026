@@ -8,6 +8,7 @@ import tecstasyLogo from '@/assets/tecstasy-logo.png';
 const navItems = [
   { label: 'TECSTASY', href: '#home' },
   { label: 'CLUBS', href: '#clubs' },
+  { label: '2K25 GLIMPSE', href: '#glimpse' },
   { label: 'COORDS', href: '#coords' },
   { label: 'EVENTS', href: '#events' },
 ];

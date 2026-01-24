@@ -4,6 +4,7 @@ import HeroSection from '@/components/HeroSection';
 import CoordsSection from '@/components/CoordsSection';
 import EventsSection from '@/components/EventsSection';
 import ClubsSection from '@/components/ClubsSection';
+import Glimpse2K25 from '@/components/Glimpse2K25';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -14,6 +15,7 @@ const Index = () => {
       <main>
         <HeroSection />
         <ClubsSection />
+        <Glimpse2K25 />
         <CoordsSection />
         <EventsSection />
       </main>
