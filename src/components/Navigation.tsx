@@ -18,42 +18,42 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-16 md:h-20 flex-wrap gap-2">
           {/* Sponsor Logos - Left Side (CSI prominent) */}
-          <div className="flex items-center gap-1.5 md:gap-2">
+          <div className="flex items-center gap-1.5 md:gap-2 flex-shrink-0">
             <img
               src={csiLogo}
               alt="CSI Logo"
-              className="w-8 h-8 md:w-10 md:h-10 rounded-full object-cover bg-white border border-border box-glow"
+              className="w-7 h-7 md:w-10 md:h-10 rounded-full object-cover bg-white border border-border box-glow"
             />
             <img
               src={scrsLogo}
               alt="SCRS Logo"
-              className="w-7 h-7 md:w-9 md:h-9 rounded-full object-cover bg-white border border-border box-glow"
+              className="w-6 h-6 md:w-9 md:h-9 rounded-full object-cover bg-white border border-border box-glow"
             />
             <img
               src={sevaLogo}
               alt="SEVA Logo"
-              className="w-7 h-7 md:w-9 md:h-9 rounded-full object-cover bg-white border border-border box-glow"
+              className="w-6 h-6 md:w-9 md:h-9 rounded-full object-cover bg-white border border-border box-glow"
             />
           </div>
 
           {/* Center Logo */}
-          <div className="flex items-center gap-2 md:gap-3">
-            <div className="w-9 h-9 md:w-11 md:h-11 rounded-lg box-glow bg-background/70 border border-border/60 flex items-center justify-center overflow-hidden">
+          <div className="flex items-center gap-2 md:gap-3 flex-1 min-w-0 justify-center md:justify-start">
+            <div className="w-8 h-8 md:w-11 md:h-11 rounded-lg box-glow bg-background/70 border border-border/60 flex items-center justify-center overflow-hidden flex-shrink-0">
               <img
                 src={tecstasyLogo}
                 alt="TECSTASY Logo"
                 className="w-full h-full object-contain"
               />
             </div>
-            <span className="font-display font-bold text-base md:text-xl tracking-wider text-glow">
+            <span className="font-display font-bold text-sm md:text-xl tracking-wider text-glow truncate">
               TECSTASY 2K26
             </span>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-2 bg-muted/50 rounded-full px-2 py-1 border border-border/50">
+          <div className="hidden md:flex items-center gap-2 bg-muted/50 rounded-full px-2 py-1 border border-border/50 flex-shrink-0">
             {navItems.map((item) => (
               <a
                 key={item.label}
@@ -90,7 +90,7 @@ const Navigation = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 text-foreground hover:text-primary transition-colors"
+            className="md:hidden p-2 text-foreground hover:text-primary transition-colors flex-shrink-0"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
