@@ -18,7 +18,7 @@ const CoordsSection = () => {
     { name: 'Veda', image: vedaImg },
     { name: 'Jennifer', image: jenniferImg },
     { name: 'Praharshita', image: praharshitaImg },
-    { name: 'Swetha K', image: swethakImg },
+    { name: 'Swethak', image: swethakImg },
     null,
   ];
 
@@ -36,30 +36,32 @@ const CoordsSection = () => {
           <h3 className="font-display text-2xl md:text-3xl gradient-text tracking-wide">Faculty Coords</h3>
           <div className="mt-6 grid grid-cols-2 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
             {facultyCoords.map((faculty, i) => (
-              <Card key={i} className="box-glow bg-card/80 border-border/60 group overflow-hidden">
-                <CardContent className="p-3">
-                  <AspectRatio ratio={1}>
-                    {faculty ? (
-                      <div className="relative h-full w-full overflow-hidden rounded-md">
-                        <img
-                          src={faculty.image}
-                          alt={faculty.name}
-                          className="h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
-                          <p className="font-display text-sm md:text-lg text-glow-strong tracking-wide">
-                            {faculty.name}
-                          </p>
+              <div key={i} className="flex flex-col items-center">
+                <Card className="box-glow bg-card/80 border-border/60 group overflow-hidden w-full">
+                  <CardContent className="p-3">
+                    <AspectRatio ratio={1}>
+                      {faculty ? (
+                        <div className="relative h-full w-full overflow-hidden rounded-md">
+                          <img
+                            src={faculty.image}
+                            alt={faculty.name}
+                            className="h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                          />
                         </div>
-                      </div>
-                    ) : (
-                      <div className="flex h-full w-full items-center justify-center rounded-md bg-muted/40 border border-border/50">
-                        <Skeleton className="h-full w-full rounded-md" />
-                      </div>
-                    )}
-                  </AspectRatio>
-                </CardContent>
-              </Card>
+                      ) : (
+                        <div className="flex h-full w-full items-center justify-center rounded-md bg-muted/40 border border-border/50">
+                          <Skeleton className="h-full w-full rounded-md" />
+                        </div>
+                      )}
+                    </AspectRatio>
+                  </CardContent>
+                </Card>
+                {faculty && (
+                  <p className="font-display text-sm md:text-base text-glow-strong tracking-wide mt-3 text-center">
+                    {faculty.name}
+                  </p>
+                )}
+              </div>
             ))}
           </div>
         </div>
@@ -80,7 +82,7 @@ const CoordsSection = () => {
                           className={`h-full w-full object-cover transition-transform duration-300 group-hover:scale-105 ${student.name === 'Avinash' ? 'scale-110' : ''}`}
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-3">
-                          <p className="font-display text-xs md:text-sm text-glow-strong tracking-wide text-center px-1">
+                          <p className="font-display text-xs md:text-sm text-cyan-400/70 tracking-wide text-center px-1">
                             {student.name}
                           </p>
                         </div>
