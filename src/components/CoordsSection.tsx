@@ -7,6 +7,7 @@ import praharshitaImg from '@/assets/praharshita.jpeg';
 import vedaImg from '@/assets/veda.jpeg';
 import jenniferImg from '@/assets/jennifer.jpeg';
 import swethakImg from '@/assets/swethak.jpeg';
+import abhishekImg from '@/assets/abhishek.jpeg';
 
 const CoordsSection = () => {
   const facultyCoords = [
@@ -19,6 +20,7 @@ const CoordsSection = () => {
     { name: 'Jennifer', image: jenniferImg },
     { name: 'Praharshita', image: praharshitaImg },
     { name: 'Swethak', image: swethakImg },
+    { name: 'Abhishek', image: abhishekImg },
     null,
   ];
 
