@@ -21,7 +21,6 @@ const CoordsSection = () => {
     { name: 'Praharshita', image: praharshitaImg },
     { name: 'Swethak', image: swethakImg },
     { name: 'Abhishek', image: abhishekImg },
-    null,
   ];
 
   return (
