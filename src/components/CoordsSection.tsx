@@ -2,6 +2,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { Skeleton } from '@/components/ui/skeleton';
 import jayaramImg from '@/assets/Jayaram.png';
+import prashanthiImg from '@/assets/prashanthi.jpeg';
 import avinashImg from '@/assets/avinash.jpeg';
 import praharshitaImg from '@/assets/praharshita.jpeg';
 import vedaImg from '@/assets/veda.jpeg';
@@ -12,7 +13,7 @@ import abhishekImg from '@/assets/abhishek.jpeg';
 const CoordsSection = () => {
   const facultyCoords = [
     { name: 'Dr. D. Jayaram', image: jayaramImg },
-    null, // Empty slot
+    { name: 'Dr. V. Prashanthi', image: prashanthiImg },
   ];
   const studentCoords = [
     { name: 'Avinash', image: avinashImg },
