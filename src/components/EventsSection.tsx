@@ -38,7 +38,7 @@ const EventsSection = () => {
             className="box-glow bg-gradient-to-r from-glow-cyan to-glow-blue hover:from-glow-blue hover:to-glow-cyan text-primary-foreground font-display text-lg tracking-wider px-8 py-6 transition-all duration-300"
           >
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSd8hALmTyozeIFBG8jsa1H_AFpFAzOMj0P4kiiaWhaT2sj0Sg/viewform?usp=sharing&ouid=105008377002093675664"
+              href="https://linktr.ee/tecstasy2k26"
               target="_blank"
               rel="noopener noreferrer"
             >
